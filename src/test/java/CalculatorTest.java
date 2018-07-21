@@ -6,7 +6,7 @@ public class CalculatorTest {
   public void evaluatesExpression() {
     Calculator calculator = new Calculator();
     int sum = calculator.evaluate("1+2+3");
-    assertEquals(5, sum);
+    assertEquals(6, sum);
     System.out.println("------TEST Ok-------");
   }
 
