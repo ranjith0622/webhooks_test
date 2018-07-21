@@ -14,7 +14,7 @@ public class CalculatorTest {
   public void evaluatesExpression2() {
     Calculator calculator = new Calculator();
     int sum = calculator.evaluate("1+3");
-    assertEquals(5, sum);
+    assertEquals(4, sum);
     System.out.println("------TEST Ok-------");
   }
   @Test
