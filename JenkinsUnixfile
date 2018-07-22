@@ -5,14 +5,14 @@ pipeline {
         stage('Test') {
             steps {
                  echo "Testing"
-                 sh 'call ant test -buildfile buildut.xml'
+                 sh 'ant test -buildfile buildut.xml'
                         
             }
         }
         stage('Build') {
             steps {
                  echo "Build"
-                 sh 'call ant' 
+                 sh 'ant' 
             }
         }
         stage('Deploy') {
