@@ -12,11 +12,11 @@
 <form:form method="POST" commandName="user">
 	<table>
 		<tr>
-			<td> nanda edited:</td>
+			<td> username:</td>
 			<td><form:input path="name" /></td>
 		</tr>
 		<tr>
-			<td>Password :</td>
+			<td>Pass :</td>
 			<td><form:password path="password" /></td>
 		</tr>
 		<tr>
