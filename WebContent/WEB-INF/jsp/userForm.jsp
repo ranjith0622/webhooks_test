@@ -12,7 +12,7 @@
 <form:form method="POST" commandName="user">
 	<table>
 		<tr>
-			<td> nanda changed ::</td>
+			<td> new user login::</td>
 			<td><form:input path="name" /></td>
 		</tr>
 		<tr>
