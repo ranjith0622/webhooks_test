@@ -13,7 +13,7 @@
 	<table>
 		<tr>
 <<<<<<< HEAD
-			<td> username: </td>
+			<td> username : </td>
 			<td><form:input path="name" /></td>
 		</tr>
 		<tr>
