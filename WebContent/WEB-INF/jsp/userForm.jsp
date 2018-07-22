@@ -12,19 +12,15 @@
 <form:form method="POST" commandName="user">
 	<table>
 		<tr>
-<<<<<<< HEAD
 			<td> username : </td>
 			<td><form:input path="name" /></td>
 		</tr>
 		<tr>
-			<td>Pass :</td>
-=======
 			<td> nanda changed ::</td>
 			<td><form:input path="name" /></td>
 		</tr>
 		<tr>
 			<td>Enter Password :</td>
->>>>>>> 7701e18909dff248b52f28bb7b173ad9c1498883
 			<td><form:password path="password" /></td>
 		</tr>
 		<tr>
