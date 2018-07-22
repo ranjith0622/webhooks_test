@@ -12,7 +12,7 @@
 <form:form method="POST" commandName="user">
 	<table>
 		<tr>
-			<td> username:</td>
+			<td> username: </td>
 			<td><form:input path="name" /></td>
 		</tr>
 		<tr>
