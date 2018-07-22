@@ -13,6 +13,12 @@
 	<table>
 		<tr>
 			<td> new user login::</td>
+			<td> username: </td>
+			<td><form:input path="name" /></td>
+		</tr>
+		<tr>
+			<td>Pass :</td>
+			<td> nanda changed ::</td>
 			<td><form:input path="name" /></td>
 		</tr>
 		<tr>
