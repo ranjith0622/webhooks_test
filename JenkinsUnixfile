@@ -1,0 +1,24 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Test') {
+            steps {
+                 echo "Testing"
+                 sh 'ant test -buildfile buildut.xml'
+                        
+            }
+        }
+        stage('Build') {
+            steps {
+                 echo "Build"
+                 sh 'ant' 
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
+            }
+        }
+    }
+}
