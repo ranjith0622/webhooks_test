@@ -5,9 +5,13 @@ pipeline {
        stage('Static Code Aanalysis') {
            steps{
 	        echo "Static code Analysis"
-		bat 'call startsonar'
-		bat 'call sonar-scanner'
-
+		{ 
+		  scannerHome = tool 'SonarScanner';
+		}  
+		WithSonarQubeEnv('SonarQube'){
+		 bat "${scannerHome}/bin/sonar-scanner.bat"
+		} 
+}
     stages {
         stage('Test') {
             steps {
