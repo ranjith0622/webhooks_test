@@ -1,0 +1,32 @@
+pipeline {
+    agent any
+
+    stages {
+       stage('Static Code Aanalysis') {
+           steps{
+	        echo "Static code Analysis"
+		bat 'call startsonar'
+		bat 'call sonar-scanner'
+
+    stages {
+        stage('Test') {
+            steps {
+                 echo "Testing"
+                 bat 'call ant test -buildfile buildut.xml'
+
+            }
+        }
+        stage('Build') {
+            steps {
+                 echo "Build"
+                 bat 'call ant'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
+            }
+        }
+    }
+}
+

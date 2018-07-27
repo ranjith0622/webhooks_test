@@ -12,8 +12,13 @@
 <form:form method="POST" commandName="user">
 	<table>
 		<tr>
+<<<<<<< HEAD
 			<td> new user login::</td>
 			<td> username: </td>
+=======
+<<<<<<< HEAD
+			<td> username : </td>
+>>>>>>> fd755d2052f53628b060090cb76efcb78190001c
 			<td><form:input path="name" /></td>
 		</tr>
 		<tr>
