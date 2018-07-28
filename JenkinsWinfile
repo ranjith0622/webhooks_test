@@ -1,0 +1,45 @@
+pipeline {
+
+    agent any
+    
+    stages {
+    
+    stage('Clone sources') {
+        steps{
+            echo "Cloning..."
+            git url: 'https://gitlab.com/june18/antproject.git'
+            }
+    }
+        
+            stage('Sonar scanner test') {
+             steps{
+                echo "Sonar scanner Testing"
+                bat 'call sonar-scanner'
+                } 
+             }
+         
+            stage('Test') {
+             steps{
+                echo "Testing..."
+                bat 'call ant test -buildfile buildut.xml'
+                }
+            }
+            
+            stage('Build') {
+             steps{
+                echo "Building..."
+                bat 'call ant war -buildfile build.xml'
+                }
+            }
+            
+            stage('Deploy') {
+             steps{
+                echo 'Deploying....'
+                echo "Deploying to Tomcat at http://localhost:8080/AntExample"
+              //bat 'call curl -s --upload-file dist/AntExample.war "http://tomcatuser:tomcatuser@localhost:8080/manager/text/deploy?path=/AntExample&update=true&tag=${BUILD_TAG}"'
+ */
+                }
+
+            }
+      }     
+}
