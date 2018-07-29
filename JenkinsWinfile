@@ -37,7 +37,6 @@ pipeline {
                 echo 'Deploying....'
                 echo "Deploying to Tomcat at http://localhost:8080/AntExample"
               //bat 'call curl -s --upload-file dist/AntExample.war "http://tomcatuser:tomcatuser@localhost:8080/manager/text/deploy?path=/AntExample&update=true&tag=${BUILD_TAG}"'
- */
                 }
 
             }
